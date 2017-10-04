@@ -6,9 +6,9 @@ order: 0
 ---
 #### 1. Download IgBlast program and other required files
 
-IgBlast program can be downloaded from ([ftp://ftp.ncbi.nih.gov/blast/executables/igblast/release/LATEST] (ftp://ftp.ncbi.nih.gov/blast/executables/igblast/release/LATEST) ).
+IgBlast program can be downloaded from ([https://ftp.ncbi.nih.gov/blast/executables/igblast/release/LATEST](ftp://ftp.ncbi.nih.gov/blast/executables/igblast/release/LATEST) ).
 
-Other required files are also needed.  Download the entire directory of internal_data and optional_file from  ([ftp://ftp.ncbi.nih.gov/blast/executables/igblast/release/] (ftp://ftp.ncbi.nih.gov/blast/executables/igblast/release/) ).
+Other required files are also needed.  Download the entire directory of internal_data and optional_file from  ([https://ftp.ncbi.nih.gov/blast/executables/igblast/release/](ftp://ftp.ncbi.nih.gov/blast/executables/igblast/release/) ).
 
 #### 2. Make blast database for germline V, D, and J gene sequences.  
 
