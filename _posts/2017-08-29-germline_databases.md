@@ -1,13 +1,15 @@
 ---
 layout: page
 category: cook
-title: "Germline databases"
+title: "How to set up"
 order: 0
 ---
+##### Download IgBlast program 
 
-#### Blast database files for searching germline V, D, and J genes.  
-You can specify any germline 
-databases you like (using -germline_db_V, -germline_db_J and -germline_db_D options).   
+You can get it from ftp://ftp.ncbi.nih.gov/blast/executables/igblast/release/LATEST
+
+#### Make blast database for germline V, D, and J gene sequences.  
+   
 The NCBI mouse germline gene databases (i.e., mouse_gl_V, etc.) are supplied with igblastn program 
 (see [https://www.ncbi.nlm.nih.gov/igblast/](https://www.ncbi.nlm.nih.gov/igblast/) about database details).
   
