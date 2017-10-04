@@ -6,7 +6,7 @@ order: 0
 ---
 ##### Download IgBlast program 
 
-You can get it from ([ftp://ftp.ncbi.nih.gov/blast/executables/igblast/release/LATEST] (ftp://ftp.ncbi.nih.gov/blast/executables/igblast/release/LATEST) ).
+You can get it from ([ftp] (ftp://ftp.ncbi.nih.gov/blast/executables/igblast/release/LATEST) ).
 
 ##### Make blast database for germline V, D, and J gene sequences.  
 
