@@ -41,7 +41,7 @@ verlap allowed.  Previous versions were hard-coded to allow nucleotide overlaps 
 * Added option for extending at 5' side
 * Default to IMGT region (was Kabat previously)
 
-July 17, 2014
+#### July 17, 2014
 
 * Release 1.4.0
 * Added capability to analyze monkey sequences.
