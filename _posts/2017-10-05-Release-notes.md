@@ -5,24 +5,28 @@ title: "Release notes"
 order: 2
 ---
 
-Sept 22, 2017
+####Sept 22, 2017
 
-*Re-engineered multi-threading mechanism which significantly shortens the processing time. Default t
+* Release 1.8.0.
+
+* Re-engineered multi-threading mechanism which significantly shortens the processing time. Default t
 o use 4 threads.
 
-*Added ability to accept the SRA accession directly as query input.
+* Added ability to accept the SRA accession directly as query input.
 
-*Lower the default nucleotide mismatch penalty values for finding D and J genes (from -4 to -2 and f
+* Lower the default nucleotide mismatch penalty values for finding D and J genes (from -4 to -2 and f
 rom -3 to -2, respectively). This is to better accommodate moderately mutated sequences. 
 
 April 19, 2017
 
-*Make nucleotide overlaps at VDJ junctions an option (-allow_vdj_overlap) and default is set to no o
+* Release 1.7.0.
+
+* Make nucleotide overlaps at VDJ junctions an option (-allow_vdj_overlap) and default is set to no o
 verlap allowed.  Previous versions were hard-coded to allow nucleotide overlaps at VDJ junctions.
 *Use alignment length instead of percent identity as tiebreaker for hits with identical blast scores
 .
-*Allow custom J gene mismatch penalty.
-*Add CDR3 start and stop to sub-region table
+* Allow custom J gene mismatch penalty.
+* Add CDR3 start and stop to sub-region table
 
 Oct 26, 2016
 
