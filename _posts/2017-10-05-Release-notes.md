@@ -5,7 +5,7 @@ title: "Release notes"
 order: 2
 ---
 
-####Sept 22, 2017
+#### Sept 22, 2017
 
 * Release 1.8.0.
 
@@ -17,7 +17,7 @@ o use 4 threads.
 * Lower the default nucleotide mismatch penalty values for finding D and J genes (from -4 to -2 and f
 rom -3 to -2, respectively). This is to better accommodate moderately mutated sequences. 
 
-####April 19, 2017
+#### April 19, 2017
 
 * Release 1.7.0.
 
@@ -28,13 +28,13 @@ verlap allowed.  Previous versions were hard-coded to allow nucleotide overlaps 
 * Allow custom J gene mismatch penalty.
 * Add CDR3 start and stop to sub-region table
 
-####Oct 26, 2016
+#### Oct 26, 2016
 
 * Release 1.6.1
 * Added clonotype report
 * Enabled multi-threading option -num_threads
 
-####April 25, 2016
+#### April 25, 2016
 
 * Release 1.5.0
 * Added CDR3 annotation 
@@ -46,7 +46,7 @@ July 17, 2014
 * Release 1.4.0
 * Added capability to analyze monkey sequences.
 
-####February 19, 2014
+#### February 19, 2014
 
 * Release 1.3.0
 * Better handling of non-Ig sequences
