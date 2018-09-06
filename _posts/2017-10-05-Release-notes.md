@@ -7,15 +7,15 @@ order: 2
 
 #### Aug 24, 2018
 
-*Release 1.10.0
+* Release 1.10.0
 
-*Fix some processes not exiting under cpu full load condition
+* Fix some processes not exiting under cpu full load condition
 
 #### April 30, 2018
 
-*Release 1.9.0
+* Release 1.9.0
 
-*Adding the AIRR rearrangement tabular format	
+* Adding the AIRR rearrangement tabular format	
 
 #### Sept 22, 2017
 
