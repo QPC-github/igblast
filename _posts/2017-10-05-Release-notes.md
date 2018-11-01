@@ -5,6 +5,13 @@ title: "Release notes"
 order: 2
 ---
 
+#### Oct 25, 2018
+
+* Release 1.11.0
+
+* Change the 0-based coordinate system to 1-based coordinate system in AIRR format (with -outfmt 19 parameter) for sequence start positions per the new AIRR Rearrangement Schema ( http://docs.airr-community.org/en/latest/datarep/rearrangements.html ).
+
+
 #### Aug 24, 2018
 
 * Release 1.10.0
