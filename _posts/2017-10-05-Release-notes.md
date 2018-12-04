@@ -5,6 +5,11 @@ title: "Release notes"
 order: 2
 ---
 
+#### Nov 26, 2018
+* Release 1.12.0
+
+* Increase allowed distance between V gene end and J gene start positions (from 90 bp to 150 bp) as well as between V gene end and D gene start positions (from 55 to 120 bp) to accommodate extremely long VDJ junctions found in some antibodies. 
+
 #### Oct 25, 2018
 
 * Release 1.11.0
