@@ -17,7 +17,7 @@ IgBlast allows you to search any germline databases of your choice (using -germl
 The NCBI mouse germline gene databases (i.e., mouse_gl_V, etc.) are supplied on our ftp site (see [https://www.ncbi.nlm.nih.gov/igblast/](https://www.ncbi.nlm.nih.gov/igblast/) about database details).
   
 To search IMGT germline sequences, you need to download them from IMGT web site 
-([http://www.imgt.org/vquest/refseqh.html#VQUEST](http://www.imgt.org/vquest/refseqh.html#VQUEST) ).  You need to download all V, D and J sequences for whatever organisms you are interested in.  Combine all V, all D and all J sequences, respectively, into separate files (i.e., one file for all V sequences, one for all D sequences and one file all for J sequences).  After you have downloaded the sequences, invoke our utility tool edit_imgt_file.pl (For versions prior to 1.13.0, you need to download it from the release/ directory) to process the sequences (i.e., to change the long IMGT definition lines to germline gene names only).  For example:
+([http://www.imgt.org/vquest/refseqh.html#VQUEST](http://www.imgt.org/vquest/refseqh.html#VQUEST) ).  You need to download all V, D and J sequences for whatever organisms you are interested in.  Combine all V, all D and all J sequences, respectively, into separate files (i.e., one file for all V sequences, one for all D sequences and one file all for J sequences).  After you have downloaded the sequences, invoke our utility tool edit_imgt_file.pl (For versions prior to 1.13.0, you need to download it separately from the release/ directory) to process the sequences (i.e., to change the long IMGT definition lines to germline gene names only).  For example:
 
 ```
 ./edit_imgt_file.pl imgt_file > my_seq_file
