@@ -8,7 +8,7 @@ order: 0
 
 IgBlast program can be downloaded from ([https://ftp.ncbi.nih.gov/blast/executables/igblast/release/LATEST](ftp://ftp.ncbi.nih.gov/blast/executables/igblast/release/LATEST) ).
 
-Other required files are also needed.  Download the entire directory of internal_data and optional_file from  ([https://ftp.ncbi.nih.gov/blast/executables/igblast/release/](ftp://ftp.ncbi.nih.gov/blast/executables/igblast/release/) ).
+For versions prior to 1.13.0, you also need to download the entire directory of internal_data and optional_file from [https://ftp.ncbi.nih.gov/blast/executables/igblast/release/](ftp://ftp.ncbi.nih.gov/blast/executables/igblast/release/).  We strongly encourage you to get the latest version.
 
 #### 2. Make blast database for germline V, D, and J gene sequences.  
 
@@ -17,16 +17,13 @@ IgBlast allows you to search any germline databases of your choice (using -germl
 The NCBI mouse germline gene databases (i.e., mouse_gl_V, etc.) are supplied on our ftp site (see [https://www.ncbi.nlm.nih.gov/igblast/](https://www.ncbi.nlm.nih.gov/igblast/) about database details).
   
 To search IMGT germline sequences, you need to download them from IMGT web site 
-([http://www.imgt.org/vquest/refseqh.html#VQUEST](http://www.imgt.org/vquest/refseqh.html#VQUEST) ).  You need to download all V, D and J sequences for whatever organisms you are interested in.  Combine all V, all D and all J sequences, respectively, into separate files (i.e., 
-one file for all V sequences, one for all D sequences and one file all for J sequences).  After you have downloaded the sequences, 
-invoke our utility tool edit_imgt_file.pl (download from the release/ directory) to process the sequences (to change 
- the long IMGT definition lines to germline gene names only).  For example:
+([http://www.imgt.org/vquest/refseqh.html#VQUEST](http://www.imgt.org/vquest/refseqh.html#VQUEST) ).  You need to download all V, D and J sequences for whatever organisms you are interested in.  Combine all V, all D and all J sequences, respectively, into separate files (i.e., one file for all V sequences, one for all D sequences and one file all for J sequences).  After you have downloaded the sequences, invoke our utility tool edit_imgt_file.pl (For versions prior to 1.13.0, you need to download it from the release/ directory) to process the sequences (i.e., to change the long IMGT definition lines to germline gene names only).  For example:
 
 ```
 ./edit_imgt_file.pl imgt_file > my_seq_file
 ```
 
-Then you can use NCBI's makeblastdb tool to make the blast database from the output file.  For example:
+Then you can use NCBI's makeblastdb tool (also packaged with IgBlast release) to make the blast database from the output file.  For example:
 
 ```
 makeblastdb -parse_seqids -dbtype nucl -in my_seq_file
