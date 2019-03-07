@@ -5,6 +5,16 @@ title: "Release notes"
 order: 2
 ---
 
+#### Mar 7, 2019
+* Release 1.13.0
+* Determine the V gene reading frame from the end of FWR3 region instead of end of V gene.  This is to allow proper determination of the
+ frames for rearrangements that have insertions or deletions near the V gene end.
+
+* Increase allowed distance between V gene end and J gene start to 225 bp to allow detection of ultra long D/N region.
+
+* Package the edit_imgt_file.pl script, the internal_data and optional_files folders into the IgBlast release such that it is easy for u
+ser to install.
+
 #### Nov 26, 2018
 * Release 1.12.0
 
