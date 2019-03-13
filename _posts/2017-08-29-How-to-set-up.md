@@ -4,7 +4,7 @@ category: cook
 title: "How to set up"
 order: 0
 ---
-#### 1. Download IgBlast program and other required files
+#### 1. Download IgBlast program
 
 IgBlast program can be downloaded from ([https://ftp.ncbi.nih.gov/blast/executables/igblast/release/LATEST](ftp://ftp.ncbi.nih.gov/blast/executables/igblast/release/LATEST) ).
 
