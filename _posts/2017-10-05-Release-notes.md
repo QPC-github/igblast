@@ -12,7 +12,7 @@ order: 2
 
 * Loosening criteria to show CDR3 end by allowing the first FWR4 base to be missing.
 
-* Bug fix: Restoring seqid for no result case.
+* Bug fix: Restoring seqid for no result case in AIRR rearrangement format.  Printing IgBlast version number instead of Blast version number with -version option.
 
 #### Mar 7, 2019
 * Release 1.13.0
