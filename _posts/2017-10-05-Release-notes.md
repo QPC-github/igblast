@@ -7,6 +7,7 @@ order: 2
 
 #### Jan 21, 2020
 Release 1.15.0
+
 *Added support for the FWR4 annotation.
 
 *The previous "-penalty" parameter was renamed as V_penalty to be consistent with other IgBLAST penalty options
