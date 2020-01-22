@@ -17,16 +17,16 @@ IgBlast allows you to search any germline databases of your choice (using -germl
 The NCBI mouse germline gene databases (i.e., mouse_gl_V, etc.) are supplied on our ftp site ([https://ftp.ncbi.nih.gov/blast/executables/igblast/release/database/](ftp://ftp.ncbi.nih.gov/blast/executables/igblast/release/database/).  Also see [https://www.ncbi.nlm.nih.gov/igblast/](https://www.ncbi.nlm.nih.gov/igblast/) about database details).
   
 To search IMGT germline sequences, you need to download them from IMGT web site 
-([http://www.imgt.org/vquest/refseqh.html#VQUEST](http://www.imgt.org/vquest/refseqh.html#VQUEST) ).  You need to download all V, D and J sequences for whatever organisms you are interested in.  Combine all V, all D and all J sequences, respectively, into separate files (i.e., one file for all V sequences, one for all D sequences and one file all for J sequences).  After you have downloaded the sequences, invoke our utility tool edit_imgt_file.pl (for versions prior to 1.13.0, you need to download it separately from the release/ directory) to process the sequences (i.e., to change the long IMGT definition lines to germline gene names only).  For example:
+([http://www.imgt.org/vquest/refseqh.html#VQUEST](http://www.imgt.org/vquest/refseqh.html#VQUEST) ).  You need to download all V, D and J sequences for whatever organisms you are interested in.  Combine all V, all D and all J sequences, respectively, into separate files (i.e., one file for all V sequences, one for all D sequences and one file all for J sequences).  After you have downloaded the sequences, invoke our utility tool edit_imgt_file.pl (in the bin directory in the IgBlast release package) to process these sequences (i.e., to change the long IMGT definition lines to germline gene names only).  For example:
 
 ```
-./edit_imgt_file.pl imgt_file > my_seq_file
+bin/edit_imgt_file.pl imgt_file > my_seq_file
 ```
 
-Then you can use NCBI's makeblastdb tool (also packaged with IgBlast release) to make the blast database from the output file.  For example:
+Then you can use NCBI's makeblastdb tool (also in the bin directory ) to make the blast database from the above output file.  For example:
 
 ```
-makeblastdb -parse_seqids -dbtype nucl -in my_seq_file
+bin/makeblastdb -parse_seqids -dbtype nucl -in my_seq_file
 ```
 
 Now you can use my_seq_file as blast database file for IgBlast.
