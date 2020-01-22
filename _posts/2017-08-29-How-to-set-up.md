@@ -10,7 +10,7 @@ IgBlast program can be downloaded from ([https://ftp.ncbi.nih.gov/blast/executab
 
 For versions prior to 1.13.0, you also need to download the entire directory of internal_data and optional_file from [https://ftp.ncbi.nih.gov/blast/executables/igblast/release/](ftp://ftp.ncbi.nih.gov/blast/executables/igblast/release/).  We strongly encourage you to get the latest version.
 
-#### 2. Make blast database for germline V, D, and J gene sequences.  
+#### 2. Get blast database for germline V, D, and J gene sequences.  
 
 IgBlast allows you to search any germline databases of your choice (using -germline_db_V, -germline_db_J and -germline_db_D options).
 
