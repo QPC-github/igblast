@@ -5,7 +5,7 @@ title: "Release notes"
 order: 2
 ---
 
-### Apr 10, 2020
+#### Apr 10, 2020
 Release 1.16.0
 
 *Added ability to use custom organism.  
