@@ -38,3 +38,17 @@ Windows system). Note that this directory does NOT contain any germline gene dat
 for how you can obtain a germline gene database).
 
 The optional_file directory contains files that indicate germline J gene coding frame start position (position is 0-based), the J gene type, and the CDR3 end position for each sequence in the germline J sequence database (Fields are tab-delimited).  The suppliled annotation information is only for NCBI or IMGT  germline gene sequence database (including gene names as well as the sequences).   If you search your own database and if it contains different sequences or sequence identifiers, then you need to edit the corresponding file accordingly (Enter -1 if the frame information is unknownor) or you won't get proper frame status or CDR3 information (other results will still be shown correctly).  You need to use -auxiliary_data option to specify your file. You can directly supply a path to this file or put it under a path pointed to by IGDATA environmental variable.
+
+#### Procedure to set up IgBLAST for custom organism
+
+IgBLAST internally only supports organisms including human, mouse, rat, rabbit and rhesus_monkey.  However, starting with version 1.16.0, IgBLAST also supports custom organism, although you need to prepare additonal files as follows.
+
+1.	 Make the germline V gene annotation file for your own organism.  The purpose of this file is to provide information such as CDR/FWR regions for your germline V genes (see internal_data/human/human.ndm.imgt for an example).  This file must be put under internal_data/my_organism folder (for example  internal_data/sheep).  For annotations using the IMGT numbering system, the file must be named my_organism.ndm.imgt for igblastn  (for example sheep.ndm.imgt) or my_organism.pdm.imgt for igblastp (for example sheep.pdm.imgt).   If you use the Kabat numbering system, the file must be named my_organism.pdm.kabat or my_organism.pdm.kabat.  Note that you do not need to make annotations for all alleles of a V gene.  Typically you only need to annotate one allele for one V gene.
+
+
+2.	Make a blast sequence database for germline V genes that correspond to what you have annotated above.  This database needs to be named my_organism_V (for example sheep_V). Make sure you use -parse_seqids flag when using makeblastdb.  The blast database files need to be put under internal_data/my_organism folder (for example  internal_data/sheep).  Note that this database is intended only as internal data for IgBLAST.  Typically the germline V gene database you want to search (i.e., specified by -germline_db_V parameter) is a different one (for example, it contains all alleles).
+
+
+3.	If you also want CDR3/FWR4 information, you need to supply a file that has information such as CDR3 stop (see optional_file/human_gl.aux for an example).  This file can have any name and can be put anywhere as long as you specify it to -auxiliary_data parameter when running IgBLAST(for example to -auxiliary_data my_foler/my_file).
+
+To run IgBLAST for your organism, please make sure you specify -organism my_organsim parameter.  
