@@ -8,7 +8,7 @@ order: 0
 
 IgBlast program can be downloaded from ([https://ftp.ncbi.nih.gov/blast/executables/igblast/release/LATEST](ftp://ftp.ncbi.nih.gov/blast/executables/igblast/release/LATEST) ).  We provide pre-compiled programs for Linux, Windows, MacOs as well as source code for you to build on your own platform. 
 
-For versions prior to 1.13.0, you also need to download the entire directory of internal_data and optional_file from [https://ftp.ncbi.nih.gov/blast/executables/igblast/release/](ftp://ftp.ncbi.nih.gov/blast/executables/igblast/release/).  We strongly encourage you to get the latest version.
+Note, for versions prior to 1.13.0 only, you also need to download the entire directory of internal_data and optional_file from [https://ftp.ncbi.nih.gov/blast/executables/igblast/release/](ftp://ftp.ncbi.nih.gov/blast/executables/igblast/release/).  We strongly encourage you to get the latest IgBlast version which contains newer internal_data and optional_file.
 
 #### 2. Get blast database for germline V, D, and J gene sequences.  
 
