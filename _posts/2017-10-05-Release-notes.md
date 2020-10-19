@@ -5,7 +5,7 @@ title: "Release notes"
 order: 2
 ---
 
-### Oct 16, 2020
+#### Oct 16, 2020
 Release 1.17.0
 
 *Added the V frame shift field to indicate if there is an internal frame shift in V gene translation frame (for example, nucleotide deletions/insertions found in pseudogenes or caused by somatic mutations).
