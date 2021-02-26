@@ -5,6 +5,11 @@ title: "Release notes"
 order: 2
 ---
 
+#### Feb 26, 2021
+Release 1.17.1
+
+*Fixed annotation errors for TCR J genes.
+
 #### Oct 16, 2020
 Release 1.17.0
 
