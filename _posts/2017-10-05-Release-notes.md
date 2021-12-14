@@ -5,6 +5,11 @@ title: "Release notes"
 order: 2
 ---
 
+#### Dec 13, 2021
+Release 1.18.0
+
+*Added capability to report C genes for Ig sequences.
+
 #### Feb 26, 2021
 Release 1.17.1
 
