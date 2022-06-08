@@ -5,6 +5,11 @@ title: "Release notes"
 order: 2
 ---
 
+#### Jun 02, 2022
+Release 1.19.0
+
+*Added logic to handle the case where there is an unrearranged J gene downstream of the VDJ rearrangement. 
+
 #### Dec 13, 2021
 Release 1.18.0
 
