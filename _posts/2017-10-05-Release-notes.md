@@ -7,7 +7,8 @@ order: 2
 
 #### Oct 18, 2022
 Release 1.20.0
-Added capability to use custom V gene FWR/CDR annotation
+
+*Added capability to use custom V gene FWR/CDR annotation
 
 #### Jun 02, 2022
 Release 1.19.0
