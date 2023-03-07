@@ -5,6 +5,15 @@ title: "Release notes"
 order: 2
 ---
 
+#### Mar 7, 2023
+Release 1.21.0
+
+*Added gaps to *_alignment_aa fields (such as sequence_alignment_aa) to reflect gaps in nucleotide sequence alignment.
+
+*Added the new AIRR format field: sequence_aa.  This is direct translation (no gaps) of nucleotide sequence using the reading frame determined by nucleotide sequence alignment to its closet germline V gene.
+
+*Added the new AIRR format field: d_frame.  This is the D gene frame that is in-frame with the J gene coding frame.  IgBLAST offers built-in IGHD gene frame support for mouse as defined by Ichihara Y et al (European Journal of Immunology Volume 19, Issue 10 p. 1849-1854).  Users can use their own custom D gene definition with IgBLAST according to their needs.
+
 #### Oct 18, 2022
 Release 1.20.0
 
