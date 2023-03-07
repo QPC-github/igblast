@@ -56,3 +56,7 @@ To run IgBLAST for your organism, please make sure you specify the -organism my_
 IgBLAST (version 1.20 or later, igblastn only) now also gives users the option to use their own V gene FWR/CDR annotation. This is useful if you want to use your own annotation (For example, your organism is not supported by IgBLAST or you prefer to use your own annotation instead of NCBI’s built-in annotation). In this case, IgBLAST will map the FWR/CDR boundaries for the top germline sequence you have annotated to your query sequence.
 
 To use this feature, you need to prepare the germline V gene annotation file (see internal_data/human/human.ndm.imgt for fields you need to supply). Then simply supply the annotation file to the “-custom_internal_data” parameter. Note that there is no need to specify the “-organism” parameter (any specified organism will be ignored) and that you need to supply annotations for ALL germline sequences in your germline database or you won’t get annotation result for those germline sequences.
+
+#### Procedure to enable reporting AIRR D gene frame
+
+To enable D gene frame field, simply use the parameter “-d_frame_data”  to specify the D gene frame definition file.  We offer mouse IGHD gene frame definition file (mouse_D.frame under the optional_file folder in IgBLAST release package) but users can supply their custom definition for any organism (see mouse_D.frame for details) according to their own needs.
